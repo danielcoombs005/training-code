@@ -11,8 +11,8 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  pathtosolution: 'training-code/Project1Copy/PizzaBoxSolution'
-  pathtoproject: 'training-code/Project1Copy/PizzaBoxSolution/PizzaBoxClient'
+  pathtosolution: 'Project1Copy/PizzaBoxSolution'
+  pathtoproject: 'Project1Copy/PizzaBoxSolution/PizzaBoxClient'
   pathtotest: 'Project1Copy/PizzaBoxSolution/PizzaBoxTest'
 
 steps:
