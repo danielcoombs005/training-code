@@ -11,14 +11,14 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  pathtosolution: '$(training-code/Project1Copy/PizzaBoxSolution)'
-  pathtoproject: '$(training-code/Project1Copy/PizzaBoxSolution/PizzaBoxClient)'
-  pathtotest: '$(Project1Copy/PizzaBoxSolution/PizzaBoxTest)'
+  pathtosolution: 'training-code/Project1Copy/PizzaBoxSolution'
+  pathtoproject: 'training-code/Project1Copy/PizzaBoxSolution/PizzaBoxClient'
+  pathtotest: 'Project1Copy/PizzaBoxSolution/PizzaBoxTest'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-  workingDirectory: $(pathtoproject)
+  workingDirectory: $(pathtosolution)
 
 #- task: DotNetCoreCLI@2
 #  inputs:
